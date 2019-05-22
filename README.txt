@@ -2,12 +2,6 @@
 G04_yesquel is a project for Large Scales Systems Engineering
 
 
-Overleaf report link: https://www.overleaf.com/7515466744hrnxjftzxqhs
-
-
-
-
-
 
 
 To RUN a DEMO, follow this guide:

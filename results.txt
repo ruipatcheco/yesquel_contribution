@@ -1,0 +1,17 @@
+10000 REPS
+
+1 servidor 10 clientes/threads -- 3435843
+2 servidor 10 clientes/threads -- 4160445
+3 servidor 10 clientes/threads -- 4354139
+
+
+2 servidor 20 clientes/threads -- 6334544
+3 servidor 20 clientes/threads -- 6268652
+
+
+10000 REPS 
+Workload abcde
+
+1 servidor 20 clientes/threads -- 6754832
+3 servidor 20 clientes/threads -- 6678282
+

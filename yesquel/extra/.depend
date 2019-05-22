@@ -1,0 +1,144 @@
+bench-config.o: bench-config.cpp bench-config.h
+bench-yesql-client.o: bench-yesql-client.cpp bench-yesql-client.h \
+ bench-client.h ../include/sqlite3.h bench-log.h bench-sql.h
+bench-mysql-client.o: bench-mysql-client.cpp bench-mysql-client.h \
+ bench-client.h bench-log.h bench-sql.h
+bench-redis-client.o: bench-redis-client.cpp bench-redis-client.h \
+ bench-client.h bench-log.h
+test-gaialocal.o: test-gaialocal.cpp test-gaia.cpp ../include/prng.h \
+ ../include/util.h ../include/prng.h ../include/os.h \
+ ../include/inttypes.h ../include/tmalloc.h ../include/os.h \
+ ../include/debug.h ../include/options.h ../include/options.h \
+ ../include/storageserverstate.h ../include/disklog.h \
+ ../include/tmalloc.h ../include/gaiatypes.h ../include/pendingtx.h \
+ ../include/debug.h ../include/util.h ../include/supervalue.h \
+ ../include/datastruct.h ../include/record.h ../include/valbuf.h \
+ ../include/gaiarpcauxfunc.h ../include/datastructmt.h \
+ ../include/diskstorage.h ../include/logmem.h ../include/gaiarpcaux.h \
+ ../include/ipmisc.h ../include/newconfig.h ../include/grpctcp.h \
+ ../include/scheduler.h ../include/task.h ../include/taskdefs.h \
+ ../include/tcpdatagram.h ../include/ccache-server.h ../include/coid.h \
+ ../include/clientlib-local.h ../include/clientlib-common.h \
+ ../include/clientdir.h ../include/ccache.h
+test-gaia.o: test-gaia.cpp ../include/prng.h ../include/util.h \
+ ../include/prng.h ../include/os.h ../include/inttypes.h \
+ ../include/tmalloc.h ../include/os.h ../include/debug.h \
+ ../include/options.h ../include/options.h \
+ ../include/storageserverstate.h ../include/disklog.h \
+ ../include/tmalloc.h ../include/gaiatypes.h ../include/pendingtx.h \
+ ../include/debug.h ../include/util.h ../include/supervalue.h \
+ ../include/datastruct.h ../include/record.h ../include/valbuf.h \
+ ../include/gaiarpcauxfunc.h ../include/datastructmt.h \
+ ../include/diskstorage.h ../include/logmem.h ../include/gaiarpcaux.h \
+ ../include/ipmisc.h ../include/newconfig.h ../include/grpctcp.h \
+ ../include/scheduler.h ../include/task.h ../include/taskdefs.h \
+ ../include/tcpdatagram.h ../include/ccache-server.h ../include/coid.h \
+ ../include/clientlib.h ../include/clientlib-common.h \
+ ../include/clientdir.h ../include/ccache.h
+bench-wiki-mysql-client.o: bench-wiki-mysql-client.cpp \
+ bench-wiki-mysql-client.h bench-client.h bench-config.h bench-log.h \
+ bench-sql.h
+bench-yesql.o: bench-yesql.cpp bench-config.h bench-log.h bench-runner.h \
+ bench-client.h bench-yesql-client.h ../include/sqlite3.h
+bench-redis.o: bench-redis.cpp bench-config.h bench-log.h bench-runner.h \
+ bench-client.h bench-redis-client.h
+bench-dtree-client.o: bench-dtree-client.cpp bench-dtree-client.h \
+ bench-client.h ../include/treedirect.h ../include/sqlite.h \
+ ../include/options.h ../include/kvinterface.h ../include/record.h \
+ ../include/inttypes.h ../include/coid.h ../include/gaiatypes.h \
+ ../include/os.h ../include/supervalue.h ../include/tmalloc.h \
+ ../include/util.h ../include/prng.h ../include/datastruct.h \
+ ../include/valbuf.h ../include/datastructmt.h ../include/btree.h \
+ ../include/dtreeaux.h ../include/cellbuf.h ../include/scheduler.h \
+ ../include/debug.h ../include/btreeInt.h ../include/clientlib.h \
+ ../include/ipmisc.h ../include/clientlib-common.h ../include/clientdir.h \
+ ../include/newconfig.h ../include/grpctcp.h ../include/task.h \
+ ../include/taskdefs.h ../include/tcpdatagram.h ../include/ccache.h \
+ ../include/gaiarpcaux.h ../include/pendingtx.h \
+ ../include/gaiarpcauxfunc.h ../include/yesql-init.h bench-sql.h
+bench-murmur-hash.o: bench-murmur-hash.cpp
+bench-wiki-yesql.o: bench-wiki-yesql.cpp bench-log.h bench-runner.h \
+ bench-client.h bench-config.h bench-wiki-yesql-client.h \
+ ../include/sqlite3.h
+getserver.o: getserver.cpp ../include/clientdir.h ../include/options.h \
+ ../include/os.h ../include/inttypes.h ../include/gaiatypes.h \
+ ../include/newconfig.h ../include/ipmisc.h ../include/util.h \
+ ../include/prng.h ../include/datastruct.h ../include/tmalloc.h \
+ ../include/grpctcp.h ../include/scheduler.h ../include/datastructmt.h \
+ ../include/task.h ../include/taskdefs.h ../include/tcpdatagram.h \
+ ../include/ccache.h ../include/valbuf.h ../include/newconfig.h
+bench-dtree.o: bench-dtree.cpp bench-runner.h bench-client.h \
+ bench-config.h bench-log.h bench-dtree-client.h ../include/treedirect.h \
+ ../include/sqlite.h ../include/options.h ../include/kvinterface.h \
+ ../include/record.h ../include/inttypes.h ../include/coid.h \
+ ../include/gaiatypes.h ../include/os.h ../include/supervalue.h \
+ ../include/tmalloc.h ../include/util.h ../include/prng.h \
+ ../include/datastruct.h ../include/valbuf.h ../include/datastructmt.h \
+ ../include/btree.h ../include/dtreeaux.h ../include/cellbuf.h \
+ ../include/scheduler.h ../include/debug.h ../include/btreeInt.h \
+ ../include/clientlib.h ../include/ipmisc.h ../include/clientlib-common.h \
+ ../include/clientdir.h ../include/newconfig.h ../include/grpctcp.h \
+ ../include/task.h ../include/taskdefs.h ../include/tcpdatagram.h \
+ ../include/ccache.h ../include/gaiarpcaux.h ../include/pendingtx.h \
+ ../include/gaiarpcauxfunc.h ../include/yesql-init.h
+showdtree.o: showdtree.cpp ../include/tmalloc.h ../include/gaiatypes.h \
+ ../include/inttypes.h ../include/os.h ../include/util.h \
+ ../include/prng.h ../include/datastruct.h ../include/tmalloc.h \
+ ../include/clientlib.h ../include/debug.h ../include/options.h \
+ ../include/util.h ../include/ipmisc.h ../include/gaiatypes.h \
+ ../include/clientlib-common.h ../include/clientdir.h \
+ ../include/newconfig.h ../include/datastruct.h ../include/grpctcp.h \
+ ../include/scheduler.h ../include/datastructmt.h ../include/task.h \
+ ../include/taskdefs.h ../include/tcpdatagram.h ../include/ccache.h \
+ ../include/valbuf.h ../include/gaiarpcaux.h ../include/record.h \
+ ../include/supervalue.h ../include/pendingtx.h \
+ ../include/gaiarpcauxfunc.h ../include/clientdir.h ../include/dtreeaux.h \
+ ../include/cellbuf.h ../include/kvinterface.h ../include/coid.h
+bench-mysql.o: bench-mysql.cpp bench-runner.h bench-client.h \
+ bench-config.h bench-log.h bench-mysql-client.h
+test-tree.o: test-tree.cpp ../include/options.h ../include/tmalloc.h \
+ ../include/os.h ../include/inttypes.h ../include/treedirect.h \
+ ../include/sqlite.h ../include/options.h ../include/kvinterface.h \
+ ../include/record.h ../include/coid.h ../include/gaiatypes.h \
+ ../include/os.h ../include/supervalue.h ../include/tmalloc.h \
+ ../include/util.h ../include/prng.h ../include/datastruct.h \
+ ../include/valbuf.h ../include/datastructmt.h ../include/btree.h \
+ ../include/dtreeaux.h ../include/cellbuf.h ../include/scheduler.h \
+ ../include/debug.h ../include/btreeInt.h ../include/clientlib.h \
+ ../include/ipmisc.h ../include/clientlib-common.h ../include/clientdir.h \
+ ../include/newconfig.h ../include/grpctcp.h ../include/task.h \
+ ../include/taskdefs.h ../include/tcpdatagram.h ../include/ccache.h \
+ ../include/gaiarpcaux.h ../include/pendingtx.h \
+ ../include/gaiarpcauxfunc.h ../include/yesql-init.h ../include/prng.h
+test-various.o: test-various.cpp ../include/os.h ../include/inttypes.h \
+ ../include/datastruct.h ../include/prng.h ../include/os.h \
+ ../include/tmalloc.h ../include/datastructmt.h ../include/datastruct.h \
+ ../include/util.h ../include/task.h ../include/gaiatypes.h \
+ ../include/datastructmt.h ../include/ipmisc.h ../include/util.h \
+ ../include/taskdefs.h ../include/options.h ../include/prng.h \
+ ../include/tmalloc-include.h ../include/warning.h ../include/task.h
+bench-runner.o: bench-runner.cpp bench-config.h bench-log.h \
+ bench-runner.h bench-client.h bench-sql.h
+test-sql.o: test-sql.cpp ../include/os.h ../include/inttypes.h \
+ ../include/gaiatypes.h ../include/os.h ../include/util.h \
+ ../include/prng.h ../include/sqlite3.h ../include/prng.h
+bench-log.o: bench-log.cpp bench-log.h
+bench-wiki-mysql.o: bench-wiki-mysql.cpp bench-log.h bench-runner.h \
+ bench-client.h bench-config.h bench-wiki-mysql-client.h
+bench-wiki-yesql-client.o: bench-wiki-yesql-client.cpp \
+ bench-wiki-yesql-client.h bench-client.h bench-config.h \
+ ../include/sqlite3.h bench-sql.h bench-log.h
+shelldt.o: shelldt.cpp ../include/options.h ../include/tmalloc.h \
+ ../include/os.h ../include/inttypes.h ../include/treedirect.h \
+ ../include/sqlite.h ../include/options.h ../include/kvinterface.h \
+ ../include/record.h ../include/coid.h ../include/gaiatypes.h \
+ ../include/os.h ../include/supervalue.h ../include/tmalloc.h \
+ ../include/util.h ../include/prng.h ../include/datastruct.h \
+ ../include/valbuf.h ../include/datastructmt.h ../include/btree.h \
+ ../include/dtreeaux.h ../include/cellbuf.h ../include/scheduler.h \
+ ../include/debug.h ../include/btreeInt.h ../include/clientlib.h \
+ ../include/ipmisc.h ../include/clientlib-common.h ../include/clientdir.h \
+ ../include/newconfig.h ../include/grpctcp.h ../include/task.h \
+ ../include/taskdefs.h ../include/tcpdatagram.h ../include/ccache.h \
+ ../include/gaiarpcaux.h ../include/pendingtx.h \
+ ../include/gaiarpcauxfunc.h ../include/yesql-init.h
